@@ -11,6 +11,8 @@ import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
+  {path:'',redirectTo:'/login-signup',pathMatch:'full'},
+  {path:'login-signup',component:LoginSignupComponent},
   {path:'',component:LayoutComponent,canActivateChild:[authGuard],
     children:[
       {
