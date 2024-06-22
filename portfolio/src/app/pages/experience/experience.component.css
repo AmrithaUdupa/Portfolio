@@ -1,0 +1,57 @@
+/* Experience section */
+.title {
+    text-align: center;
+  }
+
+.aboutme {
+    text-align: center;
+  }
+.details_container_experience {
+    background: white;
+    border: 0.1rem solid rgb(53, 53, 53);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 25rem;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 5rem;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .experienceinfo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  
+  .experienceinfo i {
+    margin-right: 1rem;
+  }
+  .experience {
+    display: flex;
+    gap: 0.5rem;
+    margin-left:11%;
+  }
+  .proficiency {
+    display: block;
+    font-size: 12px;
+    color: gray;
+    margin-top: -10px;
+    margin-right: 30%;
+  }
+  
+  article p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  .experience_title {
+    font-size: 24px;
+  }
+  
