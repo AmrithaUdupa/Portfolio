@@ -19,7 +19,7 @@
       </div>
       <div class="form-inner">
         <!-- Login -->
-        <form action="#" class="login">
+        <form *ngIf="isLoginView" action="#" class="login">
           <div class="field">
             <input
               type="text"
@@ -47,7 +47,7 @@
         </form>
   
         <!-- SignUp -->
-        <form action="#" class="signup">
+        <form *ngIf="!isLoginView" action="#" class="signup">
           <div class="field">
             <input
               type="text"

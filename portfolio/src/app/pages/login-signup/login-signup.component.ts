@@ -91,36 +91,28 @@ export class LoginSignupComponent implements OnInit {
   }
   showLogin() {
     this.isLoginView = true;
-    (document.getElementById('login') as HTMLInputElement).checked = true;
-    (document.getElementById('signup') as HTMLInputElement).checked = false;
+    // (document.getElementById('login') as HTMLInputElement).checked = true;
+    // (document.getElementById('signup') as HTMLInputElement).checked = false;
   }
 
   showSignup(event: Event) {
     event.preventDefault();
     this.isLoginView = false;
-    (document.getElementById('signup') as HTMLInputElement).checked = true;
-    (document.getElementById('login') as HTMLInputElement).checked = false;
+    // (document.getElementById('signup') as HTMLInputElement).checked = true;
+    // (document.getElementById('login') as HTMLInputElement).checked = false;
   }
 
   initializeLoginSignupLogic(): void {
-    const loginText = document.querySelector(
-      '.title-text .login'
-    ) as HTMLElement;
-    const loginForm = document.querySelector('form.login') as HTMLElement;
     const loginBtn = document.querySelector('label.login') as HTMLElement;
     const signupBtn = document.querySelector('label.signup') as HTMLElement;
-    const signupLink = document.querySelector(
-      'form .signup-link a'
-    ) as HTMLElement;
+    const signupLink = document.querySelector('form .signup-link a') as HTMLElement;
 
     signupBtn.onclick = () => {
-      loginForm.style.marginLeft = '-50%';
-      loginText.style.marginLeft = '-50%';
+      this.showSignup(new Event('click'));
     };
 
     loginBtn.onclick = () => {
-      loginForm.style.marginLeft = '0%';
-      loginText.style.marginLeft = '0%';
+      this.showLogin();
     };
 
     signupLink.onclick = (event) => {
