@@ -1,0 +1,88 @@
+ /* Project section */
+.title {
+    text-align: center;
+    margin-top:10%;
+  }
+
+.aboutme {
+    text-align: center;
+  }
+  
+.project_buttons {
+    font-weight: 600;
+    transition: all 300ms ease;
+    border-radius: 15rem;
+    font-family: 'Ropa Sans';
+    background-color: hsl(250, 69%, 61%);
+    color: white;
+    border: none;
+    width: 13%;
+    margin-top: 2rem;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between buttons */
+    align-items: center;
+    width: 50%; /* Adjust width as needed to control spacing */
+    margin: 0 auto; /* Center the container within the parent */
+    margin-top:4%;
+  }
+  
+  .buttons button {
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 10px; /* Add space around each button */
+  }
+
+  .twobuttons{
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between buttons */
+    align-items: center;
+    width: 80%; /* Adjust width as needed to control spacing */
+    
+  }
+
+  .twobuttons button{
+    flex: 1; 
+    margin: 0 10px;
+  }
+.project_container {
+    background: white;
+    border: 0.1rem solid rgb(53, 53, 53);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    width: 23rem;
+    height: 28rem;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+  .project_container img {
+    width: 80%;
+  }
+  .whole-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust width as needed to control spacing */
+    margin: 0 auto; 
+    margin-top:5%;
+    gap:10px;
+    }
+
+    .whole-container div {
+        flex: 1; 
+        margin: 0 10px; /* Space around each button */
+      }
+
+  .project_container .button1 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    border-radius: 15rem;
+    font-family: 'Ropa Sans';
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    color: black;
+    border: none;
+    width: 7rem;
+    margin-bottom: 2rem;
+  }
+  
