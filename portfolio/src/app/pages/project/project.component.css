@@ -24,9 +24,10 @@
     display: flex;
     justify-content: space-between; /* Distribute space evenly between buttons */
     align-items: center;
-    width: 50%; /* Adjust width as needed to control spacing */
+    width: 40%; /* Adjust width as needed to control spacing */
     margin: 0 auto; /* Center the container within the parent */
     margin-top:4%;
+    
   }
   
   .buttons button {

@@ -1,1 +1,33 @@
-<p>footer works!</p>
+<div class="container-fluid footer mt-5">
+    <div class="row">
+      <div class="col-lg-6 mt-3 mb-3 d-flex align-items-center">
+        <div class="d-flex flex-column">
+          <div class="d-flex align-items-center">
+            <h1 class="mb-0">Amritha Udupa</h1>
+            <img
+              src="https://i.pinimg.com/originals/bd/b8/d9/bdb8d9ba46a681ff5ac1b5e9400234a3.jpg"
+              class="img-fluid ml-3"
+              style="max-width: 300px;"
+            />
+          </div>
+          <p>Full Stack Web Developer</p>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 mt-3 mb-3 nav-links-container">
+        <a routerLink="/home" fragment="home" (click)="scrollTo('home')">Home</a>
+        <a routerLink="/about" fragment="about" (click)="scrollTo('about')">About</a>
+        <a routerLink="/experience" fragment="experience" (click)="scrollTo('experience')">Experience</a>
+        <a routerLink="/project" fragment="project" (click)="scrollTo('project')">Project</a>
+        <a routerLink="/contact" fragment="contact" (click)="scrollTo('contact')">Contact</a>
+      </div>
+  
+      <div class="col-lg-2 mt-3 mb-3">
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  
