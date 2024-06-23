@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , AfterViewInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../shared/auth.service';
 
@@ -29,7 +29,9 @@ export class LoginSignupComponent implements OnInit {
     if (localData != null) {
       this.signupUsers = JSON.parse(localData);
     }
+  }
 
+  ngAfterViewInit(){
     this.initializeLoginSignupLogic();
   }
 
@@ -102,7 +104,7 @@ export class LoginSignupComponent implements OnInit {
     // (document.getElementById('login') as HTMLInputElement).checked = false;
   }
 
-  initializeLoginSignupLogic(): void {
+  private initializeLoginSignupLogic(): void {
     const loginBtn = document.querySelector('label.login') as HTMLElement;
     const signupBtn = document.querySelector('label.signup') as HTMLElement;
     const signupLink = document.querySelector('form .signup-link a') as HTMLElement;

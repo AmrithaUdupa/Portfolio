@@ -1,10 +1,11 @@
 /* About Section */
 .title {
     text-align: center;
+    margin-bottom:1rem;
   }
   .aboutme {
     text-align: center;
-    margin-bottom:5%;
+    margin-bottom:3rem;
   }
   .about-details-container {
     display: flex;
@@ -12,7 +13,6 @@
     align-items: center;
     
   }
-
   .details_container {
     background: white;
     border: 0.1rem solid rgb(53, 53, 53);

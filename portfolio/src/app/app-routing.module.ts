@@ -11,8 +11,9 @@ import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'/login-signup',pathMatch:'full'},
-  {path:'login-signup',component:LoginSignupComponent},
+  { path: '', redirectTo: '/login-signup', pathMatch: 'full' },
+  { path: 'login-signup', component: LoginSignupComponent },
+  
   {path:'',component:LayoutComponent,canActivateChild:[AuthGuard],
     children:[
       {
@@ -34,10 +35,11 @@ const routes: Routes = [
       {
         path:'project',
         component:ProjectComponent
-      }
+      },
       
-    ]
-  }
+    ],
+  },
+  { path: '**', redirectTo: '/login-signup' },
 ];
 
 @NgModule({

@@ -27,14 +27,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   declarations: [
     AppComponent,
-    AboutComponent,
+    HomeComponent,
     ContactComponent,
     ExperienceComponent,
-    HomeComponent,
-    LoginSignupComponent,
     ProjectComponent,
-    FooterComponent,
+    LoginSignupComponent,
     LayoutComponent,
+    AboutComponent,
+    FooterComponent,
     NavbarComponent
   ],
   bootstrap: [AppComponent],
