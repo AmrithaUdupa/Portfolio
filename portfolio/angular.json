@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -34,8 +34,12 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output":"src/assets"
-              
+                "output": "/assets"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
               }
             ],
             "styles": [
@@ -48,13 +52,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "8mb",
+                  "maximumError": "8MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2mb",
-                  "maximumError": "4mb"
+                  "maximumWarning": "8mb",
+                  "maximumError": "8mb"
                 }
               ],
               "outputHashing": "all"
@@ -94,7 +98,7 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output":"src/assets"
+                "output": "/assets"
               }
             ],
             "styles": [
