@@ -93,15 +93,11 @@ export class LoginSignupComponent implements OnInit {
   }
   showLogin() {
     this.isLoginView = true;
-    // (document.getElementById('login') as HTMLInputElement).checked = true;
-    // (document.getElementById('signup') as HTMLInputElement).checked = false;
   }
 
   showSignup(event: Event) {
     event.preventDefault();
     this.isLoginView = false;
-    // (document.getElementById('signup') as HTMLInputElement).checked = true;
-    // (document.getElementById('login') as HTMLInputElement).checked = false;
   }
 
   private initializeLoginSignupLogic(): void {
